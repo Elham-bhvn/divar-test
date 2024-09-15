@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 
 url = "https://divar.ir/s/tehran/vehicles"
 s = 0
-index =100
+index =30
 while index >= 0:
     data_index = {"data-index": index}
     response = requests.get(url, params=data_index )
@@ -34,3 +34,4 @@ while index >= 0:
         break
 
 print(f"Total items found: {s}")
+#test comment 
